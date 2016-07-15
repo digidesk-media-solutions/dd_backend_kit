@@ -1,0 +1,120 @@
+/**
+ *
+ *     |o     o    |          |
+ * ,---|.,---..,---|,---.,---.|__/
+ * |   |||   |||   ||---'`---.|  \
+ * `---'``---|``---'`---'`---'`   `
+ *       `---'    [media solutions]
+ *
+ * @copyright   (c) digidesk - media solutions
+ * @link        http://www.digidesk.de
+ */
+
+@import '_variables';
+
+body {
+    overflow-x: hidden;
+}
+
+#liste {
+    padding: 0 0 40px;
+    margin: 0 -20px;
+
+    input, select {
+        height: 23px;
+        box-sizing: border-box;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        tbody tr:nth-child(odd) td {
+            background-color: #fafafa;
+        }
+
+        td {
+            border: 1px solid #ddd !important;
+            padding: 4px 8px !important;
+
+            &.listfilter {
+                background-color: #eee !important;
+
+                .b1 {
+                    height: auto;
+                }
+            }
+
+            &.listitem4 {
+                background-color: @brand-primary !important;
+            }
+        }
+
+        tbody tr:hover td {
+            background-color: #f7f7f7;
+        }
+    }
+    
+    .pagination {
+        
+        td {
+            background-color: transparent !important;
+            border: 0 !important;
+            padding: 0 !important;
+        }
+        
+    }
+}
+
+.tabs {
+    width: 100%;
+    background: #eee;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.1);
+    margin: 0 -21px;
+
+    .tab {
+        background: transparent;
+        height: 30px;
+        border: 0;
+
+        .b1 {
+            padding: 8px 10px !important;
+        }
+
+        .b1 a {
+            padding: 0 !important;
+            border-radius: 0 !important;
+            color: inherit !important;
+
+            &:hover {
+                background: transparent;
+                color: @text-color;
+            }
+        }
+
+        &.active {
+
+            .b1 {
+                background: #fff;
+                border-right: 1px solid #ddd;
+                border-left: 1px solid #ddd;
+                padding-bottom: 10px !important;
+                margin-bottom: -2px;
+                color: @text-color;
+            }
+
+            .b1 a {
+                background: transparent;
+                border-radius: 0 !important;
+                border: 0;
+            }
+
+        }
+    }
+
+    .last .r1 {
+        background: transparent;
+    }
+}

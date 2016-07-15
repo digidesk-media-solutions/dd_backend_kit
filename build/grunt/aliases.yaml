@@ -1,0 +1,7 @@
+development:
+  - "jshint:development"
+  - "less:default"
+  - "uglify:default"
+
+default:
+  - "development"

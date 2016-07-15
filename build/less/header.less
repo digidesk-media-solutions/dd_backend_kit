@@ -1,0 +1,64 @@
+/**
+ *
+ *     |o     o    |          |
+ * ,---|.,---..,---|,---.,---.|__/
+ * |   |||   |||   ||---'`---.|  \
+ * `---'``---|``---'`---'`---'`   `
+ *       `---'    [media solutions]
+ *
+ * @copyright   (c) digidesk - media solutions
+ * @link        http://www.digidesk.de
+ */
+
+@import '_variables';
+
+#top {
+
+    body {
+        background: #ffffff;
+        height: 54px;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        line-height: 32px;
+    }
+
+    ul {
+        display: block;
+        float: left;
+
+        li {
+            display: block;
+            float: left;
+
+            a {
+                color: lighten( @text-color, 10% ) !important;
+                padding: 0;
+                text-transform: none;
+
+            }
+
+            &:hover {
+                background: transparent !important;
+
+                a {
+                    color: darken( @text-color, 10% ) !important
+                }
+            }
+        }
+    }
+
+    .version {
+        position: static;
+        float: right;
+        background: transparent;
+        background-image: none !important;
+        color: saturate( @brand-primary, 10% );
+        padding: 0;
+        width: auto;
+        height: auto;
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+}
